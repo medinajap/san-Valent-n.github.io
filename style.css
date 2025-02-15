@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f7;
+    color: #c2185b;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #c2185b;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.main-content {
+    padding: 40px 20px;
+}
+
+.main-content h2 {
+    color: #880e4f;
+}
+
+.message {
+    background-color: #f1c4d2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #c2185b;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos del botón de corazón (tamaño ajustado) */
+.heart-button {
+    background-color: #ff80ab;
+    color: white;
+    font-size: 60px; /* Tamaño más pequeño */
+    border: none;
+    padding: 20px 30px; /* Padding ajustado */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 30px;
+    animation: pulse 1.5s infinite; /* Animación de latido */
+}
+
+.heart-button:hover {
+    transform: scale(1.1);
+    background-color: #f50057;
+}
+
+/* Animación de latido */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* El tamaño máximo del latido */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
